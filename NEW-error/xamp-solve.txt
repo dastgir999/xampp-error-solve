@@ -1,0 +1,49 @@
+100% Solution of XAMPP Server error mysql shutdown unexpectedly.
+
+
+step 1. go to xamppp/mysql
+go to xamppp/mysql
+first copy entire data folder and save it in a different name like prev-data that is why you may face data loss due to wrong operation.
+After go to the data folder and open it and delete the following folders and files.
+
+
+
+mysql
+performance schema
+aria_log.00000001
+aria_log_control
+ib_buffer-pool
+ib_logfile0
+ib_logfile1
+ibdata1
+ibtmp1
+multi-mastar.info
+my
+mysql.pid
+mysql_error
+mysqld.dmp
+and delete all
+mysql-relay-bin files.....
+
+
+
+
+step 2 .After deleting all required files and folder go to xampp/mysql and open backup folder and copy the following files and folder and paste into the data folder.
+
+mysql
+performance schema
+aria_log.00000001
+aria_log_control
+ib_buffer-pool
+ib_logfile0
+ib_logfile1
+ibdata1
+ibtmp1
+multi-mastar.info
+my
+
+step 3 . After pasting the files and folder start the xampp server.
+now you see that your xampp server error is gone.
+
+ 
+
